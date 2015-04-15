@@ -1,79 +1,40 @@
-# Where things are
-source:      .
-destination: ./_site
-plugins:     ./_plugins
-layouts:     ./_layouts
-data_source: ./_data
-collections: null
+# Title of your blog; shows in the header
+name: "Lucas Viola - Yet Another Software Enthusiast"
 
-# Handling Reading
-safe:         false
-include:      [".htaccess"]
-exclude:      []
-keep_files:   [".git", ".svn"]
-encoding:     "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+# Description of your content (will only be used on Google Search)
+description: "Full Stack Software Enthusiast, DevOps, Functional Languages Researcher, Agile Developer"
 
-# Filtering Content
-show_drafts: null
-limit_posts: 0
-future:      true
-unpublished: false
+# Your name. Will show in your footer + sidebar 
+author: "Lucas Viola"
 
-# Plugins
-whitelist: []
-gems:      []
+url: "http://lucasviola.github.io"
+baseurl: ""
 
-# Conversion
-markdown:    kramdown
-highlighter: rouge
-lsi:         false
-excerpt_separator: "\n\n"
+# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words. 
+author-bio: "I'm a software developer based on Porto Alegre - Brazil. I have worked on many Open Source projects for companies such as Microsoft and ThoughtWorks. Currently I'm working on my own projects. I'm passionate about the Open Source Community, functional languages and Agile Development."
 
-# Serving
-detach:  false
-port:    4000
-host:    127.0.0.1
-baseurl: "" # does not include hostname
+# Social Accounts (mine, as placeholders)
 
-# Backwards-compatibility
-relative_permalinks: false
+twitter: lucasViolaDev
+github: lucasviola
+linkedin: http://br.linkedin.com/pub/lucas-matzenbacher/36/456/181/pt
 
-# Outputting
-permalink:     date
-paginate_path: /page:num
-timezone:      null
+# Google Analytics (you may want to changes these with yours or even delete :)
 
-quiet:    false
-defaults: []
+# ga_domain: m3xm.github.io
+# ga_tracking_id: UA-47727049-1
 
-# Markdown Processors
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-  fenced_code_blocks: true
+# Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
 
-rdiscount:
-  extensions: []
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
 
-redcarpet:
-  extensions: []
+paginate: 10
+paginate_path: "/page/:num"
 
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+# SCSS
 
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
+sass:
+  sass_dir: _scss
+  style: :compressed
