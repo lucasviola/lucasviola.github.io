@@ -19,20 +19,11 @@ date:   2015-04-15 16:04
 
 3. Looping and Iterating: Recursion
 
-4. Dealing with Lists
-4.1. List traversing
-4.2 Accumulating
-4.3 Comprehensions
+4. Types: Algebraic Data Types
 
-4. Pattern Matching
-5.1 Pattern Matching on lists
-5.2. Generic Patterns: The Wild Card Pattern
-
-6. Types: Algebraic Data Types
-
-7. A tad about functors, monoids and monads
+5. A tad about functors, monoids and monads
      
-8. Bibliography and further reading
+6. Bibliography and further reading
 
 
 
