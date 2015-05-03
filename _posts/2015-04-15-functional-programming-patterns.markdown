@@ -140,20 +140,6 @@ fib n | n == 1 = 1
 
 Pretty straight forward. If n is equal to 1 or 2, n applied to fib returns 1. If not (otherwise/else), it calls itself on (n - 1) and (n - 2) until n is evaluated to one of the base cases. Then it ends the recursion.
 
-4. Dealing with lists
-
-So, pretty much all data structures cam be summed up into lists. A string is a list of chars. A file is a list of strings. A tree is a list of nodes and leaves.
-There are multiple commonly used patterns for dealing with these data sets. In this section I’ll explain some of them.
-
-4.1 List traversing
-
-
-
-
-
-
-
-
 6. Types: Algebraic Data Types
 
 As I've done in the section about functions, let us start by talking about what types are not. 
