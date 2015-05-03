@@ -33,7 +33,7 @@ I've been studying Haskell for the past few months so this is a compilation on s
 
 First let me say that the “patterns” I'm gonna talk about here are not “design patterns” as in OO Design Patterns, but guidelines and principles for a good design in functional programming. Almost every FP language has a feature that matches one of these principles, and thats why I'm making this compilation. I'm gonna try to be as clear as possible on my writing but don't worry if you dont understand every little bit of this article, this is a very difficult and mind breaking subject if you are coming from an imperative paradigm (like me).
 
-2. Functions
+#### 2. Functions
 
 Let us start from the basics. Functional Programming strives for a very generic way of programming which enforces parameterizing stuff whenever you can (decoupling data from behaviour).
 In pure functional programming languages everything is a function. So, obviously, every design principle requires functions.
@@ -49,7 +49,7 @@ Mathematical Operators are ALSO functions. How does that work? In Haskell and li
     (+) 5 6
 
 
-2.1 Currying and Partial Application
+#### 2.1 Currying and Partial Application
 
 So, let us explain the code I wrote in the previous example:
 I called the function (+) and passed it two parameters. Pretty obvious, right? No. That's not what I dit. Actually, in most functional programming languages functions can only receive ONE parameter.
@@ -67,7 +67,7 @@ Partial application is very common when dealing with lists. I'll talk more about
 Also, function application is right-associative. It always “walks” to the right.
 
 
-2.2.2. Higher-Orderism
+#### 2.2.2. Higher-Orderism
 
 A Higher-Order function is a function that:
 
@@ -86,7 +86,7 @@ The map() function, which receives a predicate - a partially evaluated function 
 
 The reduce() (sometimes called fold) function is a recursive function (We’ll talk more about it in the next section) which is kind of like map but changes the size of the data (folds it) into a single value. Like an accumulator would do.
 
-2.3. Function Composition
+#### 2.3. Function Composition
 
 Basically, it is what is says. You can combine (compose) functions to make another functions. Now, this is a very powerful tool, since it provides a way for encapsulating implementations and reducing lots of lines of code.
 
@@ -106,7 +106,7 @@ Lets see a more practical example:
 evenSum :: Integral a => [a] -> a
 evenSum = (foldl' (+) 0) . (filter even)
 
-3. Recursion
+#### 3. Recursion
 
 Pure functional programming languages can’t have side-effects which means they cannot alter the state of variables, so there’s no way you can do a apply the very known imperative pattern of iterating n times through an mount of code. So that’s why we use recursion!
 
@@ -132,7 +132,7 @@ fib n | n == 1 = 1
 
 Pretty straight forward. If n is equal to 1 or 2, n applied to fib returns 1. If not (otherwise/else), it calls itself on (n - 1) and (n - 2) until n is evaluated to one of the base cases. Then it ends the recursion.
 
-6. Types: Algebraic Data Types
+#### 6. Types: Algebraic Data Types
 
 As I've done in the section about functions, let us start by talking about what types are not. 
 
@@ -145,7 +145,7 @@ The ADT model sees data types in a more mathematical point of view. To understan
 - You can use product types and sum types
 
 
-7. Functors, monoids and monads
+#### 7. Functors, monoids and monads
 
 - Functors: mappable functions
 
@@ -165,7 +165,7 @@ original “thing”.
 A monad is a monoid in the category of the endofunctors.
 
 
-8. Bibliography and further reading
+#### 8. Bibliography and further reading
 
 http://www.scs.stanford.edu/14sp-cs240h/projects/burke.pdf
 http://learnyouahaskell.com/
