@@ -103,7 +103,8 @@ But what does the equation above mean? In a general way, it means that: whenever
 
 Lets see a more practical example:
 
-squareSum = 
+evenSum :: Integral a => [a] -> a
+evenSum = (foldl' (+) 0) . (filter even)
 
 3. Recursion
 
@@ -137,10 +138,9 @@ As I've done in the section about functions, let us start by talking about what 
 
 Types are NOT classes.
 
-Types are these special kind of “things” that separate data from behaviour and
-are used to enforce Design by correctness. To explain types in a functional point of view, I’ll use the model of Algebraic Data Types or, as I will from now on abbreviate: ADT. There is a whole lot of languages that implement ADT, such as Haskell, F#, Miranda and OCaml.
+Types are these special kind of “things” that separate data from behaviour and are used to enforce Design by correctness. To explain types in a functional point of view, I’ll use the model of Algebraic Data Types or, as I will from now on abbreviate: ADT. There is a whole lot of languages that implement ADT, such as Haskell, F#, Miranda and OCaml.
 
--The ADT model sees data types in a more mathematical point of view. To understand it you have to to think about types as in valid domain/range, input/output values. It starts with primitives and create new types by composing (glueing) them together. This is also called a composite type.
+The ADT model sees data types in a more mathematical point of view. To understand it you have to think about types as in valid domain/range, input/output values. It starts with primitives and create new types by composing (glueing) them together. This is also called a composite type.
 
 - You can use product types and sum types
 
