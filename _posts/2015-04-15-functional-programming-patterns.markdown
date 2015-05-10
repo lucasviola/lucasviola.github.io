@@ -3,7 +3,7 @@ layout: post
 title:  "Commonly used Functional Programming Principles"
 date:   2015-04-15 16:04
 ---
-
+This is a DRAFT. Last edited on: 2015/05/10
      
 ### Table of Contents
 
