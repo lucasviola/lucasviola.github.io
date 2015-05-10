@@ -1,19 +1,15 @@
-# Title of your blog; shows in the header
 name: "Lucas Viola - Yet Another Software Enthusiast"
 
-# Description of your content (will only be used on Google Search)
 description: "Full Stack Software Enthusiast, DevOps, Functional Languages Researcher, Agile Developer"
 
-# Your name. Will show in your footer + sidebar 
 author: "Lucas Viola"
 
 url: "http://lucasviola.github.io"
 baseurl: ""
 
-# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words. 
-author-bio: "I'm a software developer based on Porto Alegre - Brazil. I have worked on many Open Source projects for companies such as Microsoft and ThoughtWorks. Currently I'm working on my own projects. I'm passionate about the Open Source Community, functional languages and Agile Development."
+author-bio: "Software Developer. Linux Hacker. Passionate about Open Source, DevOps, Agile and building cool stuff on hackathons."
 
-# Social Accounts (mine, as placeholders)
+# Social Accounts 
 
 twitter: lucasViolaDev
 github: lucasviola
