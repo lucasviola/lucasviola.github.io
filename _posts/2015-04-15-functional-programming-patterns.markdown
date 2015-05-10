@@ -81,8 +81,10 @@ A known example of higher-orderism is the mapReduce technology created by Google
 MapReduce is mainly composed by two functions:
 
 The map() function, which receives a predicate - a partially evaluated function like (+10) - and a data structure (such as a list or a file) and applies the predicate to the list returning a changed data structure.
+
+Here is the type signature of map in Haskell:
     
-    Here is the type signature of map in Haskell: (a -> b) -> [a] -> [b]
+	(a -> b) -> [a] -> [b]
 
 The reduce() (sometimes called fold) function is a recursive function (We’ll talk more about it in the next section) which is kind of like map but changes the size of the data (folds it) into a single value. Like an accumulator would do.
 
@@ -92,8 +94,12 @@ Basically, it is what is says. You can combine (compose) functions to make anoth
 
 The formal definition of function composition is:
 
-Type signature: (f -> h) -> (g -> h) -> (h -> h)    
-    (f . g) h = f (g (h))
+	(f . g) h = f (g (h))
+
+And its type signature is:
+
+	(f -> h) -> (g -> h) -> (h -> h)    
+
 
 
 So that f, g and h are functions and “.” is the operator that binds (glues) them together.
